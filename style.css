@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+header {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 10vh;
+  /* border: 1px solid; */
+}
+.nav {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid red;
+}
+button:hover{
+    background-color: white;
+}
+.container1 {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#flashBox {
+  border: 1px solid;
+  
+  margin-top: 5px;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+#flashBox h2 {
+  margin: 10px;
+  text-align: center;
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin: 10px;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+.inputBox textarea{
+    resize: none;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 5px;
+    /* font-size: 1.2rem; */
+    padding: 0;
+}
+.btn button{
+    width: fit-content;
+    margin-top: 20px;
+    margin: 10px;
+}
+#flashCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+.flashCard{
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    word-wrap: break-word;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+.flashCard h2{
+    font-size: 1rem;
+}
+.flashCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* .fa-minus{
+    top: 3%;
+    right: 2%;
+    position: absolute;
+    color: #1a1a1a;
+    transition: 0.3s ease-out;
+}
+.fa-minus:hover{
+    color:red; */
+
+@media(max-width:1280px){
+    .container{width:100%}
+}
+@media(max-width:768px){
+    .flashCard{margin:auto;}
+    .flashCard{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:480px){
+    .nav{padding: auto;
+    gap: 10px;
+flex-direction: column;
+align-items: center;
+}
+.flashBox{
+width: 95%;
+}
+.flashCard{
+    width: 100%;
+}
+}
+
+
